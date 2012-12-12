@@ -1,4 +1,5 @@
-===Sge wrapper for ZXING AS3/JS QR reader
+Sge wrapper for ZXING AS3/JS QR reader
+===
 
 Check out index.html for example usage.
 
