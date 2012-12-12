@@ -88,7 +88,7 @@ package
 					// webcam detected
 					
 					// change the default mode of the webcam
-					camera.setMode( 620,480, 15, true)
+					camera.setMode( 640,480, 15, true)
 					camera.setQuality( 0, 100 )
 					
 					trace('camera')
