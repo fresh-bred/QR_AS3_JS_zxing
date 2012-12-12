@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+</head>
+<body>
+  <div id="altContent">
+    <h1>QR</h1>
+    <p><a href="http://www.adobe.com/go/getflashplayer">Get Adobe Flash player</a></p>
+  </div>
+  <script src="qr.js"></script>
+  <script>
+    setupQrReader({
+      width: 640,
+      height: 480,
+      success: function(code){
+        console.log(code);
+      },
+      noWebcam: function(){
+        console.log("no webcam");
+      }
+    });
+  </script>
+</body>
+</html>
