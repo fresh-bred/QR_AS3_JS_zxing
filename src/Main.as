@@ -40,14 +40,11 @@ package
 		private var qrErrorCb:String
 		private var intervalPointer:uint;
 		
-		private var settings:Object;
-		
 		public function Main():void 
 		{
 			ExternalInterface.addCallback("start", init)
 			ExternalInterface.addCallback("stop", stop)
 			
-			settings = LoaderInfo(this.root.loaderInfo).parameters;
 			//if (stage) init();
 			//else addEventListener(Event.ADDED_TO_STAGE, init);
 		}
@@ -60,7 +57,7 @@ package
 			removeEventListener(Event.ADDED_TO_STAGE, init);
 			// entry point
 			
-			videoDisplay = new Video( stage.width, stage.height);
+			videoDisplay = new Video( stage.stageWidth, stage.stageHeight);
 			if ( cameraOn() ) {
 				// wait 1sec to start!
 				setTimeout( function():void {
@@ -91,7 +88,7 @@ package
 					// webcam detected
 					
 					// change the default mode of the webcam
-					camera.setMode( stage.width, stage.height, 15, true)
+					camera.setMode( stage.stageWidth, stage.stageHeight, 15, true)
 					camera.setQuality( 0, 100 )
 					
 					trace('camera')
