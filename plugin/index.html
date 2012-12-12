@@ -15,6 +15,10 @@
     setupQrReader({
       width: 320,
       height: 240,
+      container_id: "altContent",
+      swf_id: "QA",
+      qr_swf: "qr.swf",
+      express_install_swf: "expressInstall.swf",
       success: function(code){
         console.log(code);
         document.getElementById("result").innerText = code;
