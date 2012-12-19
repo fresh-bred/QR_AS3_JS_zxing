@@ -52,7 +52,7 @@
       bgcolor: "",
     };
     var attributes = {
-      id: options.swf_id
+      id: 'QR'
     };
     swfobject.embedSWF(
       options.qr_swf, 
