@@ -46,18 +46,18 @@
     var flashvars = {};
     var params = {
       menu: "false",
-      scale: "noScale",
-      allowFullscreen: "true",
+      //scale: "noScale",
+      //allowFullscreen: "true",
       allowScriptAccess: "always",
       bgcolor: "",
     };
     var attributes = {
-      id:"QR"
+      id: 'QR'
     };
     swfobject.embedSWF(
-      "QR.swf", 
-      "altContent", options.width, options.height, "10.0.0", 
-      "expressInstall.swf", 
+      options.qr_swf, 
+      options.container_id, options.width, options.height, "10.0.0", 
+      options.express_install_swf, 
       flashvars, params, attributes);
 
   };
