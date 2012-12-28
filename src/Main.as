@@ -57,7 +57,7 @@ package
 			removeEventListener(Event.ADDED_TO_STAGE, init);
 			// entry point
 			
-			videoDisplay = new Video( 640, 480);
+			videoDisplay = new Video( stage.stageWidth, stage.stageHeight);
 			if ( cameraOn() ) {
 				// wait 1sec to start!
 				setTimeout( function():void {
