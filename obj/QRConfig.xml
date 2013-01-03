@@ -16,7 +16,7 @@
     </define>
     <define append="true">
       <name>CONFIG::timeStamp</name>
-      <value>'12/27/2012'</value>
+      <value>'1/3/2013'</value>
     </define>
     <define append="true">
       <name>CONFIG::air</name>
@@ -40,7 +40,7 @@
   <file-specs>
     <path-element>C:\zxing\src\Main.as</path-element>
   </file-specs>
-  <default-background-color>#FFFFFF</default-background-color>
+  <default-background-color>#464748</default-background-color>
   <default-frame-rate>30</default-frame-rate>
   <default-size>
     <width>474</width>
