@@ -46,8 +46,8 @@
     var flashvars = {};
     var params = {
       menu: "false",
-      //scale: "noScale",
-      //allowFullscreen: "true",
+      scale: "noScale",
+      allowFullscreen: "true",
       allowScriptAccess: "always",
       bgcolor: "",
     };
